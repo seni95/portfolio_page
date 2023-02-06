@@ -6,6 +6,7 @@ import SecondPage from './pages/SecondPage';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import { useEffect, useRef, useState } from 'react';
 import ThirdPage from './pages/ThirdPage';
+import IntroPage from './pages/IntroPage';
 
 function App() {
   const contentsList = useRef();
@@ -77,7 +78,7 @@ function App() {
   })
 
   return (
-    <div className="container" ref={contentsList}>
+    <div className="main" ref={contentsList}>
       <div className='w-[500px] fixed h-full'>
       <Intro currentPage={introAction}></Intro></div>
       <div className='pl-[500px] grow'  >
