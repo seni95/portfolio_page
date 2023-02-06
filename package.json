@@ -18,6 +18,8 @@
     "react-scroll-parallax": "^3.3.2",
     "scroll-out": "^2.2.12",
     "styled-components": "^5.3.6",
+    "typeit": "^8.7.1",
+    "typeit-react": "^2.6.4",
     "web-vitals": "^2.1.0"
   },
   "scripts": {

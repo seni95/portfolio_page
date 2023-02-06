@@ -1,14 +1,21 @@
 import React from 'react'
+import AlignItemsList from '../components/UI/AlignItemsList'
+import MediaControlCard from '../components/UI/MediaControlCard'
 
 export default function FirstPage() {
   return (
     <div className='h-screen w-full'>
-      <h1 className='text-3xl'>저에 대해서</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequuntur non qui? Quisquam expedita illo veritatis, sint earum dignissimos obcaecati optio vel cumque itaque veniam a omnis facilis fugiat perferendis?</p>
-      <h2>분야</h2>
-      <p>프론트엔드</p>
-      <h2>MBTI</h2>
-      <p>INTP</p>
+      <h2>직무</h2>
+      <h3>프론트엔드 개발자</h3>
+      <h2>보유 스킬</h2>
+      <div className='flex flex-wrap'>
+    <MediaControlCard></MediaControlCard>
+    <MediaControlCard></MediaControlCard>
+    <MediaControlCard></MediaControlCard>
+    <MediaControlCard></MediaControlCard>
+    <MediaControlCard></MediaControlCard>
+    <MediaControlCard></MediaControlCard>
+      </div>
     </div>
   )
 }
