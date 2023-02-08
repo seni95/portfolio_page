@@ -8,6 +8,9 @@ import SCMSkill from '../components/UI/SkillUI/SCMSkill'
 import ETCSkill from '../components/UI/SkillUI/ETCSkill'
 import {AiFillHtml5} from 'react-icons/ai';
 import {DiCss3,DiJavascript} from 'react-icons/di'
+import {SiFirebase} from 'react-icons/si';
+import {RiReactjsFill} from 'react-icons/ri'
+import {TbBrandReactNative} from 'react-icons/tb'
 export default function FirstPage() {
   return (
     <div className='min-h-screen w-full flex flex-col align-items-center
@@ -20,9 +23,9 @@ export default function FirstPage() {
     <li><AiFillHtml5 className='text-[#f0932b]'/></li>
     <li><DiCss3 className='text-[#0984e3]'></DiCss3></li>
     <li><DiJavascript className='text-[#f9ca24]'></DiJavascript></li>
-    <li><DBSkill></DBSkill></li>
-    <li><ReactSkill></ReactSkill></li>
-    <li><SCMSkill></SCMSkill></li>
+    <li><SiFirebase className='text-[#f6e58d]'/></li>
+    <li><RiReactjsFill className='text-[#34ace0]'></RiReactjsFill></li>
+    <li><TbBrandReactNative/></li>
     </ul>
       </div>
     </div>
