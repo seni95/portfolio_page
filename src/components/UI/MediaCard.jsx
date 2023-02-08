@@ -6,7 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-export default function MediaCard() {
+export default function MediaCard({el}) {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
@@ -25,7 +25,7 @@ export default function MediaCard() {
       </CardContent>
       <CardActions>
         <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+        <Button size="small"><a href='https://voracious-process-9fb.notion.site/efbea86e614b48318a591fd3a686b3c4'>자세히 보기</a></Button>
       </CardActions>
     </Card>
   );

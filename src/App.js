@@ -7,6 +7,7 @@ import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import { useEffect, useRef, useState } from 'react';
 import ThirdPage from './pages/ThirdPage';
 import IntroPage from './pages/IntroPage';
+import Header from './components/UI/Header';
 
 function App() {
   const contentsList = useRef();
@@ -79,10 +80,14 @@ function App() {
 
   return (
     <div className="main" ref={contentsList}>
-      <div className='w-[500px] fixed h-full'>
-      <Intro currentPage={introAction}></Intro></div>
-      <div className='pl-[500px] grow'  >
-          <FirstPage></FirstPage>
+      <Header></Header>
+      <div className='w-[800px] fixed -bottom-10 -left-40 max-sm:hidden'>
+      <img src="https://cdn.pixabay.com/photo/2018/05/02/07/31/the-little-girl-3367884_960_720.png"></img>
+      {/* <img src="https://cdn.pixabay.com/photo/2015/02/17/23/07/drawing-640180_960_720.png"></img> */}
+      </div>
+      <div className='pl-[500px] grow bg-color-bg max-sm:pl-0'  >
+
+        <FirstPage></FirstPage>
       <SecondPage></SecondPage>
       <ThirdPage></ThirdPage>
       </div>

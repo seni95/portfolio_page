@@ -10,6 +10,7 @@ export default function IntroPage() {
     bg-cover
     flex
     align-items-center
+    
     '>
         <Title></Title>
     </div>

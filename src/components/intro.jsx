@@ -12,6 +12,7 @@ export default function Intro({currentPage}) {
         <div className='introChat'>{words[currentPage-1]}</div>
         <img src={`${process.env.PUBLIC_URL}/img/mainImg${currentPage}.gif`} alt="" />
         </div>
+        
     </div>
   )
 }
