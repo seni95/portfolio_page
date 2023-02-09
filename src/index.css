@@ -14,6 +14,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin:0
+
 }
 
 body::-webkit-scrollbar{
@@ -75,18 +76,36 @@ code {
 }
 
 
-
 .skills ul li{
   margin-left: 10px;
   margin-right: 10px;
-  font-size: 10rem;
+  font-size: 9rem;
+  @apply my-5
+}
+.skills ul li:hover{
 }
 
 h2{
   
-  @apply text-4xl 
+  @apply text-3xl my-3
+}
+
+h3{
+  @apply text-xl 
 }
 
 li{
   @apply px-2
+}
+
+img{}
+
+[data-scroll] {
+  transition: opacity 1s;
+}
+[data-scroll="in"] {
+  opacity: 1;
+}
+[data-scroll="out"] {
+  opacity: 0;
 }
