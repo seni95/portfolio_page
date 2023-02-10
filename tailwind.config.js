@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
@@ -11,6 +12,9 @@ module.exports = {
       'header-color':'#f3eaeb',
       'selected':'#ffb3b5',
       'main-container':'#FAF2F1',
+    },
+    fontFamily:{
+      'doHyeon':['"Do Hyeon"', 'sans-serif'],
     }
   },
   plugins: [],
