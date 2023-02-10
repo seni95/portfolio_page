@@ -5,16 +5,20 @@ import {FaAward} from 'react-icons/fa';
 import {GiPositionMarker} from 'react-icons/gi';
 import {BsFillPersonFill , BsFlower3} from 'react-icons/bs'
 import {MdWork} from 'react-icons/md'
+import useScrollFadeIn from '../components/hooks/useScrollFadeIn';
 
 export default function SecondPage() {
+
+  const left  = useScrollFadeIn('right');
+  const right = useScrollFadeIn('left',1,.3);
   return (
-    <div className='min-h-screen w-full flex flex-col align-items-center
-    justify-center pl-10 font-mono font-bold bg-color-bg-dark'>
-  
+    <div className='min-h-screen w-full flex items-center
+    justify-center pl-10  bg-color-bg-dark ' id="secondPage">
+    <div {...left} className='pr-16'>
     <div>
     <h2><FaUniversity className='inline mr-2'></FaUniversity>Education(학력)</h2>
     <h3>계명대학교</h3>
-    <ul>
+    <ul className='py-3'>
       <li>영어영문학/컴퓨터 공학 복수전공</li>
       <li>3.13/4.5</li>
     </ul>      
@@ -32,6 +36,8 @@ export default function SecondPage() {
     <h2><GiPositionMarker className='inline mr-2'></GiPositionMarker>주소</h2>
     <h3>평택시 용이동</h3>
     </div>
+    </div>
+    <div {...right}>
     <div>
     <h2><BsFillPersonFill className='inline mr-2'></BsFillPersonFill>성별, 출생년도</h2>
     <h3>(여) 1995.07.26</h3>
@@ -50,6 +56,7 @@ export default function SecondPage() {
     </div>
     <div>
     
+    </div>
     </div>
   </div>
   )

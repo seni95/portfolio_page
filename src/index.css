@@ -1,9 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
 :root{
   --color-bg:#f3eaeb;
+  font-family: 'Do Hyeon', sans-serif;
+
 }
 
 body {
@@ -13,8 +15,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin:0
-
+  margin:0;
+  font-family: 'Do Hyeon', sans-serif;
 }
 
 body::-webkit-scrollbar{
@@ -80,18 +82,19 @@ code {
   margin-left: 10px;
   margin-right: 10px;
   font-size: 9rem;
-  @apply my-5
+  @apply my-5;
+
 }
 .skills ul li:hover{
 }
 
 h2{
-  
-  @apply text-3xl my-3
+  @apply text-6xl my-3 font-bold 
 }
 
 h3{
-  @apply text-xl 
+
+  @apply text-3xl 
 }
 
 li{

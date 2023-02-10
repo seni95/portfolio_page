@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 
 export default function MediaCard({el}) {
   return (
-    <Card sx={{ maxWidth: 345 , borderRadius: '1rem',backgroundColor:'#FAF2F1'}}>
+    <Card sx={{ maxWidth: 345 , borderRadius: '1rem',backgroundColor:'#FAF2F1',marginLeft:10, marginTop:10}}>
       <CardMedia
         sx={{ height: 140 ,borderRadius: '1rem'}}
         image="https://voracious-process-9fb.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F3629090d-3345-4190-bdd2-88a4df094983%2FUntitled.png?table=block&id=b637ff73-3c4c-4761-8fb9-fed17dc7ec40&spaceId=12843261-57ef-4646-a419-56394aa12631&width=2000&userId=&cache=v2"

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import {SiNetlify} from 'react-icons/si'
 import {AiFillHtml5} from 'react-icons/ai';
 import {DiCss3,DiJavascript} from 'react-icons/di'
@@ -9,35 +9,29 @@ import {SiMaterialui} from 'react-icons/si';
 import {SiJquery} from 'react-icons/si';
 import {FaYarn} from 'react-icons/fa';
 import {SiAdobexd, SiPostcss,SiTailwindcss } from 'react-icons/si'
-import ScrollOut from 'scroll-out';
+import useScrollFadeIn from '../components/hooks/useScrollFadeIn';
 
 export default function FirstPage() {
-  
-  useEffect(()=>{
-    ScrollOut({
-      onShown: function(el) {
-        // remove the class
-        el.classList.remove("animated");
-    
-        // force reflow
-        void el.offsetWidth;
-    
-        // re-add the animated cl
-        el.classList.add("animated");
-      }
 
-    });
-  })
+  const position = useScrollFadeIn('left',1,0);
+  const positionDetail = useScrollFadeIn('left',1,0);
+  const skill = useScrollFadeIn('left',1,1);
+  const skillDetail = useScrollFadeIn('left',1,1);
+
+  useEffect(()=>{
+
+  },[])
+
   return (
-    <div className='min-h-screen w-full flex flex-col 
-     pl-10 font-mono font-bold'>
-     <div className='mb-10'>
-     <h2 className='text-4xl'>직무</h2>
-      <h3 className='frontend'>프론트엔드 개발자</h3>
+    <div id="container" className='min-h-screen w-full flex flex-col 
+     pl-10 '>
+     <div className='my-10'>
+     <h2 className='text-4xl my-3' {...position}>직무</h2>
+      <h3 {...positionDetail}>프론트엔드 개발자</h3>
      </div>
-      <h2 className='text-4xl'>보유 스킬</h2>
+      <h2 className='text-4xl my-2' {...skill}>보유 스킬</h2>
       <div className='skills'>
-    <ul className='flex flex-wrap px-10'>
+    <ul className='flex flex-wrap px-10' {...skillDetail}>
     <li><AiFillHtml5 className='text-[#f0932b]'/></li>
     <li><DiCss3 className='text-[#0984e3]'></DiCss3></li>
     <li><DiJavascript className='text-[#f9ca24]'></DiJavascript></li>

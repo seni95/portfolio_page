@@ -7,7 +7,7 @@ import ThirdPage from './pages/ThirdPage';
 import Header from './components/UI/Header';
 import MyStroy from './pages/MyStroy';
 import Gallery from './pages/Gallery';
-import ScrollOut from 'scroll-out'
+import $ from 'jquery';
 
 function App() {
   const contentsList = useRef();
