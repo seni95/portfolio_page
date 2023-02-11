@@ -7,6 +7,8 @@ export default function Gallery() {
     justify-center pl-10 font-mono font-bold bg-color-bg-dark'>
         <h2>LIFE STYLE</h2>
         
-        <Swiper></Swiper></div>
+        <Swiper></Swiper>
+        
+        </div>
   )
 }
