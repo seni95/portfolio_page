@@ -7,7 +7,7 @@ import ThirdPage from './pages/ThirdPage';
 import Header from './components/UI/Header';
 import MyStroy from './pages/MyStroy';
 import Gallery from './pages/Gallery';
-import $ from 'jquery';
+import Footer from './pages/Footer';
 
 function App() {
   const contentsList = useRef();
@@ -28,6 +28,7 @@ function App() {
       <ThirdPage></ThirdPage>
       <MyStroy></MyStroy>
       <Gallery></Gallery>
+      <Footer></Footer>
       </div>
     </div>
   );

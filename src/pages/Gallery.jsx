@@ -1,13 +1,13 @@
 import React from 'react'
-import Swiper from '../components/UI/Swiper'
+import MultipleRows from '../components/UI/MultipleRows'
 
 export default function Gallery() {
   return (
-    <div className='min-h-screen w-full flex flex-col align-items-center
-    justify-center pl-10 font-mono font-bold bg-color-bg-dark'>
+    <div className='py-20 w-full flex flex-col align-items-center
+    justify-center font-mono font-bold bg-color-bg-dark items-center'>
         <h2>LIFE STYLE</h2>
         
-        <Swiper></Swiper>
+       <MultipleRows></MultipleRows>
         
         </div>
   )
