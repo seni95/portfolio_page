@@ -10,7 +10,8 @@ export default function ThirdPage() {
   return (
     <div className='min-h-screen w-full flex-col align-items-center
     justify-center pl-10 font-mono font-bold '>
-        <div className='flex flex-warp w-full' {...firstLine}><MediaCard></MediaCard>
+        <div className='flex flex-warp w-full' {...firstLine}>
+        <MediaCard></MediaCard>
         <MediaCard></MediaCard>
         <MediaCard></MediaCard>
         </div>
