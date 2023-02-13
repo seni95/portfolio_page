@@ -5,8 +5,22 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import {useState} from 'react';
+import { Fade, Popper } from '@mui/material';
+import { Box } from '@mui/system';
 
 export default function MediaCard({el}) {
+  const [open, setOpen] = useState(false);
+  const [anchorEl, setAnchorEl] = useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+    console.log(event.currentTarget);
+    setOpen((previousOpen) => !previousOpen);
+  };
+
+  const canBeOpen = open && Boolean(anchorEl);
+  const id = canBeOpen ? 'transition-popper' : undefined;
   return (
     <Card sx={{ maxWidth: 345 , borderRadius: '1rem',backgroundColor:'#FAF2F1',marginLeft:10, marginTop:10}}>
       <CardMedia
@@ -23,11 +37,26 @@ export default function MediaCard({el}) {
         </Typography>
       </CardContent>
       <CardActions sx={{display:'flex',justifyContent:"flex-end"}}>
-        <Button size="small" sx={{backgroundColor:'#9C4146',color:"white",borderRadius:"1.5rem",
+        <Button size="small"
+         aria-describedby={id}
+         onClick={handleClick}
+        sx={{backgroundColor:'#9C4146',color:"white",borderRadius:"1.5rem",
       '&:hover': {
         backgroundColor: '#7d2a30',
         opacity: [0.9, 0.8, 0.7],
       }}}>자세히 보기</Button>
+        <Popper 
+        id={id} open={open} anchorEl={anchorEl} transition
+        sx={{width:(document.body.offsetWidth / 2)}}
+        >
+        {({ TransitionProps }) => (
+          <Fade {...TransitionProps} timeout={350}>
+            <Box sx={{ border: 1, p: 1, bgcolor: 'white', height:(window.screen.height / 2) }}>
+              The content of the Popper.
+            </Box>
+          </Fade>
+        )}
+      </Popper>
        <Button size="small" sx={{borderRadius:"1.5rem",
       '&:hover': {
         backgroundColor: '#7d2a30',

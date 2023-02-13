@@ -14,7 +14,7 @@ h1{
 }
 
 nav ul li{
-  @apply text-xl
+  @apply text-xl px-10
 }
 
 body {
@@ -97,7 +97,7 @@ code {
 }
 
 h2{
-  @apply text-6xl my-3 font-bold 
+  @apply text-6xl mt-10 font-bold mb-3
 }
 
 h3{
