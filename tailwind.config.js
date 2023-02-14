@@ -19,7 +19,9 @@ module.exports = {
       'doHyeon':['"Do Hyeon"', 'sans-serif'],
     },
     screens:{
-      'lg':'1500px'
+      'lg':'1500px',
+      'sm': '640px',
+      'md': '768px',
     }
   },
   plugins: [],
