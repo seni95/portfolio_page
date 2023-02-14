@@ -26,15 +26,19 @@ export default function FirstPage() {
   },[])
 
   return (
-    <div id="basicInfo" className='min-h-screen w-full flex flex-col 
-     pl-10'>
-     <div className='my-10'>
-     <h2 className='text-4xl my-3' {...position}>직무</h2>
+    <div id="basicInfo" className='min-h-screen w-full flex flex-col relative
+     max-lg:px-10'>
+     <div className='my-10 flex justify-between'>
+      <div className='self-end'>
+      <h2 className='text-4xl my-3' {...position}>직무</h2>
       <h3 {...positionDetail}>프론트엔드 개발자</h3>
+      <h2 className='text-4xl my-10' {...skill}>보유 스킬</h2>
+      </div>
+      <img src={`${process.env.PUBLIC_URL}/img/me.png`} className='w-[300px] float-right lg:hidden max-sm:hidden z-30'></img>
+
      </div>
-      <h2 className='text-4xl my-2' {...skill}>보유 스킬</h2>
       <div className='skills'>
-    <ul className='flex flex-wrap px-10 w-full' {...skillDetail}>
+    <ul className='flex flex-wrap w-full' {...skillDetail}>
     <li>
       <DescShow title="HTML" desc={<div>원하는 방식대로 문서의 구조를 잡고 텍스트의 구조적 의미를 표시하여 구조화된 문서를 만들 수 있습니다. 또한 검색엔진이 이해하기 쉽도록 홈페이지의 구조와 페이지를 개발해 검색 결과 상위에 노출 할 수 있도록 하는 작업을 할 수 있습니다.</div>}>
       <AiFillHtml5 className='text-[#f0932b] drop-shadow-2xl'/>

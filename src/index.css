@@ -88,7 +88,6 @@ code {
   margin-left: 10px;
   margin-right: 10px;
   font-size: 9rem;
-  @apply my-5;
 
 }
 .skills ul li:hover{

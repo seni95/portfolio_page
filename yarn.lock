@@ -1319,11 +1319,6 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@fontsource/roboto@^4.5.8":
-  version "4.5.8"
-  resolved "https://registry.npmjs.org/@fontsource/roboto/-/roboto-4.5.8.tgz"
-  integrity sha512-CnD7zLItIzt86q4Sj3kZUiLcBk1dSk81qcqgMGaZe7SQ1P8hFNxhMl5AZthK1zrDM5m74VVhaOpuMGIL4gagaA==
-
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
   resolved "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.11.8.tgz"
@@ -3047,11 +3042,6 @@ batch@0.6.1:
   version "0.6.1"
   resolved "https://registry.npmjs.org/batch/-/batch-0.6.1.tgz"
   integrity sha512-x+VAiMRL6UPkx+kudNvxTl6hB2XNNCG2r+7wixVfIYwu/2HKRXimwQyaumLjMveWvT2Hkd/cAJw+QBMfJ/EKVw==
-
-bezier-easing@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/bezier-easing/-/bezier-easing-2.1.0.tgz"
-  integrity sha512-gbIqZ/eslnUFC1tjEvtz0sgx+xTK20wDnYMIA27VA04R7w6xxXQPZDbibjA9DTWZRA2CXtwHykkVzlCaAJAZig==
 
 bfj@^7.0.2:
   version "7.0.2"
@@ -6899,13 +6889,6 @@ p-try@^2.0.0:
   resolved "https://registry.npmjs.org/p-try/-/p-try-2.2.0.tgz"
   integrity sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==
 
-parallax-controller@^1.5.0:
-  version "1.6.0"
-  resolved "https://registry.npmjs.org/parallax-controller/-/parallax-controller-1.6.0.tgz"
-  integrity sha512-IVRuEMMcLtAnlthB3MJ+bzkOQWz26DESXsP3x+CBsGjIjmXxLr+l1IkR799dQETXgGBZQTUyhRUXFaThBc6+lA==
-  dependencies:
-    bezier-easing "^2.1.0"
-
 param-case@^3.0.4:
   version "3.0.4"
   resolved "https://registry.npmjs.org/param-case/-/param-case-3.0.4.tgz"
@@ -7868,13 +7851,6 @@ react-scripts@5.0.1:
     workbox-webpack-plugin "^6.4.1"
   optionalDependencies:
     fsevents "^2.3.2"
-
-react-scroll-parallax@^3.3.2:
-  version "3.3.2"
-  resolved "https://registry.npmjs.org/react-scroll-parallax/-/react-scroll-parallax-3.3.2.tgz"
-  integrity sha512-mLgcLqyFhrIp31gLjz11yYmWEwS8NJoOoCZ15ZFXPOcpPQK8R+jZfeuO59Trm9bReok/iDUyx3ZyCCZjkxj37Q==
-  dependencies:
-    parallax-controller "^1.5.0"
 
 react-slick@^0.29.0:
   version "0.29.0"

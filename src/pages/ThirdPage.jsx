@@ -10,7 +10,7 @@ export default function ThirdPage() {
   console.log(contents);
   return (
     <div id="portfolio" className='min-h-screen w-full flex-col align-items-center
-    justify-center pl-10 font-mono font-bold py-20'>
+    justify-center font-mono font-bold py-20'>
         <div className='flex ' {...firstLine}>
         {contents.slice(0,3).map((el,index)=> <MediaCard el={el} key={index}></MediaCard>)}
         </div>
