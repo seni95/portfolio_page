@@ -1,7 +1,7 @@
 import {reactRef,useEffect,useCallback, useRef} from 'react';
 
 
-const useScrollFadeIn = (direction='up',duration=1,delay=0)=>{
+const useScrollFadeIn = (direction='up',duration=1,delay=0,threshold=0.7)=>{
     const dom = useRef();
 
     const handleDirection = (name)=>{
@@ -40,7 +40,7 @@ const useScrollFadeIn = (direction='up',duration=1,delay=0)=>{
         const { current } = dom;
     
         if (current) {
-          observer = new IntersectionObserver(handleScroll, { threshold: 0.7 });
+          observer = new IntersectionObserver(handleScroll, { threshold });
           observer.observe(current);
         }
     

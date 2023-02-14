@@ -12,10 +12,14 @@ module.exports = {
       'header-color':'#f3eaeb',
       'selected':'#ffb3b5',
       'main-container':'#FAF2F1',
-      'blue':'#2980b9'
+      'blue':'#2980b9',
+      'point':'#9c4146'
     },
     fontFamily:{
       'doHyeon':['"Do Hyeon"', 'sans-serif'],
+    },
+    screens:{
+      'lg':'1500px'
     }
   },
   plugins: [],

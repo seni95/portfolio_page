@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 :root{
   --color-bg:#f3eaeb;
   font-family: 'Do Hyeon', sans-serif;

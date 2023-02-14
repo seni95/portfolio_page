@@ -16,7 +16,7 @@ export default function SecondPage() {
   const right = useScrollFadeIn('left',1,.3);
   return (
     <div className='min-h-screen w-full flex items-center
-    justify-center pl-10  bg-color-bg-dark ' id="secondPage">
+    justify-center pl-10  bg-color-bg-dark z-20 min-lg:z-40 relative' id="secondPage">
     <div {...left} className='pr-16'>
     <div>
     <h2><FaUniversity className='inline mr-2'></FaUniversity>Education(학력)</h2>

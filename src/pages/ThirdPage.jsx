@@ -1,23 +1,21 @@
 import React from 'react'
 import useScrollFadeIn from '../components/hooks/useScrollFadeIn'
 import MediaCard from '../components/UI/MediaCard'
+import portfolioList from '../Contents/portfolioList';
 
 export default function ThirdPage() {
-
+  const contents = portfolioList();
   const firstLine = useScrollFadeIn('right');
   const secondLine = useScrollFadeIn('right');
-
+  console.log(contents);
   return (
-    <div className='min-h-screen w-full flex-col align-items-center
-    justify-center pl-10 font-mono font-bold '>
-        <div className='flex flex-warp w-full' {...firstLine}>
-        <MediaCard></MediaCard>
-        <MediaCard></MediaCard>
-        <MediaCard></MediaCard>
+    <div id="portfolio" className='min-h-screen w-full flex-col align-items-center
+    justify-center pl-10 font-mono font-bold py-20'>
+        <div className='flex ' {...firstLine}>
+        {contents.slice(0,3).map((el,index)=> <MediaCard el={el} key={index}></MediaCard>)}
         </div>
-        <div className='flex flex-warp w-full' {...secondLine}>
-        <MediaCard></MediaCard>
-        <MediaCard></MediaCard>
+        <div className='flex ' {...secondLine}>
+        {contents.slice(3,6).map((el,index)=> <MediaCard el={el} key={index}></MediaCard>)}
 
         </div>
     </div>

@@ -5,11 +5,9 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import { Collapse, IconButton, Typography } from '@mui/material';
 import SelfIntroduction from '../../../Contents/SelfIntroduction';
-import CardContent from '@mui/material/CardContent';
 import { Box } from '@mui/system';
 
 import { useState } from 'react';
-import { MdKeyboardArrowDown } from 'react-icons/md';
 
 export default function Stroies() {
     
@@ -24,7 +22,8 @@ export default function Stroies() {
           
                 <ListItem key={index} sx={{width:"1000px"}}  onClick={()=>setOpen(open===index ? -1:index)}>
                   <ListItemAvatar>
-                    <Avatar>
+                    <Avatar sx={{background:"transparent"}}>
+                      {item.avatar}
                     </Avatar>
                   </ListItemAvatar>
                   <Box sx={{display:'flex', flexDirection:'column'}}>
