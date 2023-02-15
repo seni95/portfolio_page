@@ -27,7 +27,7 @@ export default function FirstPage() {
 
   return (
     <div id="basicInfo" className='min-h-screen w-full flex flex-col relative
-     max-lg:p-10'>
+     max-lg:px-10'>
        <div  className='sm:hidden flex justify-center'>
        <img src={`${process.env.PUBLIC_URL}/img/me.png`} className="h-[300px]"></img>
        </div>
