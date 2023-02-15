@@ -5,8 +5,8 @@ import portfolioList from '../Contents/portfolioList';
 
 export default function ThirdPage() {
   const contents = portfolioList();
-  const firstLine = useScrollFadeIn('right');
-  const secondLine = useScrollFadeIn('right');
+  const firstLine = useScrollFadeIn('left',1,0,0.5);
+  const secondLine = useScrollFadeIn('left',1,0,0.5);
   console.log(contents);
   return (
     <div id="portfolio" className='min-h-screen w-full flex-col align-items-center

@@ -39,9 +39,10 @@ export default function Header() {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
-        <MenuItem onClick={handleClose}>My account</MenuItem>
-        <MenuItem onClick={handleClose}>Logout</MenuItem>
+        <MenuItem><a href="#basicInfo">기본정보</a></MenuItem>
+        <MenuItem><a href="#portfolio">포트폴리오</a></MenuItem>
+        <MenuItem><a href="#myStory">나의 이야기</a></MenuItem>
+        <MenuItem><a href="#myGallery">갤러리</a></MenuItem>
       </Menu>
     </div>
 

@@ -85,9 +85,7 @@ code {
 
 
 .skills ul li{
-  margin-left: 10px;
-  margin-right: 10px;
-  font-size: 9rem;
+  margin : 10px;
 }
 
 .skills ul li:hover{
@@ -114,22 +112,27 @@ h3{
   }
 
 
-  .skills ul li{
-    font-size: 1rem;
-  }
+
 }
+
+@media (max-width: 640px) {  
+ 
+  h2{
+    @apply text-2xl mt-10 font-bold mb-3
+  }
+  
+  h3{
+  
+    @apply text-lg 
+  }
+
+
+
+}
+
 
 img{}
 
-[data-scroll] {
-  transition: opacity 1s;
-}
-[data-scroll="in"] {
-  opacity: 1;
-}
-[data-scroll="out"] {
-  opacity: 0;
-}
 
 
 .center{

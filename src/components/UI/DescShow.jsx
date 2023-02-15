@@ -8,6 +8,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 
 export default function DescShow({ children, desc, hoverType = "rounded" }) {
 
+  const onMobile = useMediaQuery('(max-width:640px)')
 
   const ToolsExplain = styled(({ className, ...props }) => (
     <Tooltip {...props} classes={{ popper: className }} />
@@ -33,7 +34,7 @@ export default function DescShow({ children, desc, hoverType = "rounded" }) {
       }
     >
       {hoverType === "rounded" ?
-        <IconButton sx={{ fontSize:"10rem",padding: "10px", width: "100%" }}>
+        <IconButton sx={{ fontSize:onMobile?"3rem":"10rem",padding: onMobile?"0":"10px", width: "100%" }}>
           {children}
         </IconButton> :
         <Button sx={{ fontSize: "10rem",width: "100%" }}>
