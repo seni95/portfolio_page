@@ -28,13 +28,16 @@ export default function FirstPage() {
   return (
     <div id="basicInfo" className='min-h-screen w-full flex flex-col relative
      max-lg:px-10'>
-      <div className='my-10 flex justify-between'>
+       <div  className='sm:hidden flex justify-center'>
+       <img src={`${process.env.PUBLIC_URL}/img/me.png`} className="h-[300px]"></img>
+       </div>
+      <div className='mt-5 flex justify-between'>
         <div className='self-end'>
           <h2 className='text-4xl my-3' {...position}>직무</h2>
           <h3 {...positionDetail}>프론트엔드 개발자</h3>
           <h2 className='text-4xl my-10' {...skill}>보유 스킬</h2>
         </div>
-        <img src={`${process.env.PUBLIC_URL}/img/me.png`} className='w-[300px] float-right icon:hidden z-30'></img>
+        <img src={`${process.env.PUBLIC_URL}/img/me.png`} className='w-[300px] float-right icon:hidden z-30 max-sm:hidden'></img>
       </div>
       <div className='skills'>
         <ul className='flex flex-wrap w-full' {...skillDetail}>

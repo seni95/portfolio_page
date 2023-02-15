@@ -8,7 +8,7 @@ export default function Footer() {
             <li>경기도 평택시</li>
             <li>ghkdtpdus95@naver.com</li>
         </ul>
-        <h2>Best Product, High Quality</h2>
+        <h3>이 페이지는 반응형으로 만들어져 있습니다.</h3>
     </footer>
   )
 }

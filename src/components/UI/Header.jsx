@@ -10,7 +10,7 @@ export default function Header() {
     max-md:rounded-none max-md:m-0 max-md:px-0'>
        <h1 className='text-4xl max-sm:text-xl'>황세연 포트폴리오</h1>
        <nav>
-        <ul className='flex'>
+        <ul className='flex max-sm:hidden'>
             <li><a href="#basicInfo">기본정보</a></li>
             <li><a href="#portfolio">포트폴리오</a></li>
             <li><a href="#myStory">나의 이야기</a></li>
