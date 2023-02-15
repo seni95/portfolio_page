@@ -35,7 +35,7 @@ export default function FirstPage() {
         <div className='self-end'>
           <h2 className='text-4xl my-3' {...position}>직무</h2>
           <h3 {...positionDetail}>프론트엔드 개발자</h3>
-          <h2 className='text-4xl my-10' {...skill}>보유 스킬</h2>
+          <h2 className='text-4xl my-10 max-sm:my-5 max-sm:mt-10' {...skill}>보유 스킬</h2>
         </div>
         <img src={`${process.env.PUBLIC_URL}/img/me.png`} className='w-[300px] float-right icon:hidden z-30 max-sm:hidden'></img>
       </div>
