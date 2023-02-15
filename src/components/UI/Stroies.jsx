@@ -4,7 +4,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import { Collapse, IconButton, Typography } from '@mui/material';
-import SelfIntroduction from '../../../Contents/SelfIntroduction';
+import SelfIntroduction from '../../Contents/SelfIntroduction';
 import { Box } from '@mui/system';
 
 import { useState } from 'react';

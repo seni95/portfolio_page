@@ -1,8 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import FirstPage from './pages/firstPage';
 import SecondPage from './pages/SecondPage';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef} from 'react';
 import ThirdPage from './pages/ThirdPage';
 import Header from './components/UI/Header';
 import MyStroy from './pages/MyStroy';

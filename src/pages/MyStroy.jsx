@@ -1,6 +1,6 @@
 import React from 'react'
 import useScrollFadeIn from '../components/hooks/useScrollFadeIn'
-import Stroies from '../components/UI/SkillUI/Stroies'
+import Stroies from '../components/UI/Stroies'
 import Title from '../components/UI/Title'
 
 

@@ -9,7 +9,9 @@ import {useState} from 'react';
 import { Modal } from '@mui/material';
 import { Box } from '@mui/system';
 import {GrClose} from 'react-icons/gr';
-
+import { BsGraphUp,BsTools } from 'react-icons/bs';
+import { FcCloseUpMode } from 'react-icons/fc';
+import { MdDetails } from 'react-icons/md';
 const style = {
   position: 'absolute',
   top: '50%',
@@ -47,7 +49,7 @@ export default function MediaCard({el}) {
           {el.title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-        {el.desc}
+        {el.desc1}
         </Typography>
       </CardContent>
       <CardActions sx={{display:'flex',justifyContent:"flex-end"}}>
@@ -70,7 +72,32 @@ export default function MediaCard({el}) {
         <h2 id="child-modal-title">{el.title}</h2> 
           <Button onClick={handleClose}><GrClose className='text-5xl'></GrClose></Button>
         </div>
-          {el.view}
+        <Typography component={'span'}>
+        <div className='mb-3'>
+     <ul>
+       <li>생성 날짜 : {el.detail.date}</li>
+       <li>주요 기술 : <ul>{el.detail.tech.map((i,index)=><li key={index}>{i}</li>)}</ul></li>
+       <li>바로 가기 링크 : <a href={el.URL} className='underline'>CLICK HERE</a></li>
+     </ul>
+   </div>
+   <img src={el.mainImg}></img>
+     <p className='bg-color-bg-dark py-3 my-3 text-xl'>
+     <FcCloseUpMode className='inline mr-3'></FcCloseUpMode>
+      {el.desc2}
+     </p>
+     <div>
+       <h3><BsTools className='inline'></BsTools> 사용 기술 및 라이브러리</h3>
+       <ul>
+        {el.tech.map((i,index)=><li key={index}>{i}</li>)}
+       </ul>
+     </div>
+     <div>
+       <h3><BsGraphUp className='inline'></BsGraphUp> 성장 경험</h3>
+       <ul>
+         <li>앱 스토어 등록 및 배포 경험</li>
+       </ul>
+     </div>
+   </Typography>
         </Box>
       </Modal>
 
