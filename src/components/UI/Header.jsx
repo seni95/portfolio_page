@@ -16,10 +16,10 @@ export default function Header() {
 
   return (
     <div className='max-lg:flex-col absolute z-[500] 
-    inset-x-0 px-10 py-5 flex items-center justify-between bg-header-color gap-y-5
+    inset-x-0 px-16 py-5 flex items-center justify-between bg-header-color gap-y-5
     rounded-full mx-10 my-2 lg:h-[100px]
-    max-md:rounded-none max-md:m-0 max-md:px-0
-    max-sm:flex-row'>
+    max-md:rounded-none max-md:m-0 max-md:px-10 max-lg:items-start
+    max-sm:flex-row max-sm:px-3'>
       <div className='sm:hidden absolute'>
       <Button
         id="basic-button"

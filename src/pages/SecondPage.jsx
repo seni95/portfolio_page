@@ -52,10 +52,6 @@ export default function SecondPage() {
     <h2><BsFlower3 className='inline mr-2'></BsFlower3>결혼 여부</h2>
     <h3>미혼</h3>
     </div>
-    {/* <div>
-      <h2>경력</h2>
-      <h3>신입</h3>
-    </div> */}
     <div>
       <h2><MdWork className='inline mr-2'></MdWork>희망 근무조건</h2>
       <h3>고용형태 : 정규직</h3>
