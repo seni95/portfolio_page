@@ -13,12 +13,12 @@ export default function ThirdPage() {
     justify-center font-bold py-20'>
         <div {...firstLine}>
         <ul className='flex flex-wrap'>
-        {contents.slice(0,3).map((el,index)=> <li key={index}><MediaCard el={el}></MediaCard></li>)}
+        {contents.slice(0,3).map((el,index)=> <li className='ml-20 mt-20' key={index}><MediaCard el={el}></MediaCard></li>)}
         </ul>
         </div>
         <div {...secondLine}>
         <ul className='flex flex-wrap'>          
-        {contents.slice(3,6).map((el,index)=> <li key={index}><MediaCard el={el}></MediaCard></li>)}
+        {contents.slice(3,6).map((el,index)=> <li className='ml-20 mt-20' key={index}><MediaCard el={el}></MediaCard></li>)}
         </ul>
 
         </div>

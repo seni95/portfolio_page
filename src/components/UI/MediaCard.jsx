@@ -46,7 +46,7 @@ const style = {
   };
 
   return (
-    <Card sx={{ width: 345 , borderRadius: '1rem',backgroundColor:'#FAF2F1',marginLeft:10, marginTop:10,flexShrink:0}}>
+    <Card sx={{ width: 345 , borderRadius: '1rem',backgroundColor:'#FAF2F1',flexShrink:0}}>
       <CardMedia
         sx={{ height: 200 ,borderRadius: '1.2rem'}}
         image={el.mainImg}
