@@ -11,10 +11,10 @@ export default function ThirdPage() {
   return (
     <div id="portfolio" className='min-h-screen w-full flex-col align-items-center
     justify-center font-mono font-bold py-20'>
-        <div className='flex ' {...firstLine}>
+        <div className='flex' {...firstLine}>
         {contents.slice(0,3).map((el,index)=> <MediaCard el={el} key={index}></MediaCard>)}
         </div>
-        <div className='flex ' {...secondLine}>
+        <div className='flex' {...secondLine}>
         {contents.slice(3,6).map((el,index)=> <MediaCard el={el} key={index}></MediaCard>)}
 
         </div>

@@ -22,6 +22,7 @@ module.exports = {
       'lg':'1500px',
       'sm': '640px',
       'md': '768px',
+      'icon':'1200px'
     }
   },
   plugins: [],

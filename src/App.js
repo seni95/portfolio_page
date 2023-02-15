@@ -17,10 +17,10 @@ function App() {
   return (
     <div className="main" ref={contentsList}>
       <Header></Header>
-      <div className='w-[500px] fixed left-10 -bottom-0 max-lg:hidden z-30'>
+      <div className='w-[500px] fixed left-10 -bottom-0 max-icon:hidden z-30'>
       <img src={`${process.env.PUBLIC_URL}/img/me.png`}></img>
       </div>
-      <div className='pl-[20%] max-lg:pl-0 grow bg-color-bg max-sm:pl-0 pt-[130px]'>
+      <div className='pl-[20%] max-lg:pl-[30%] max-icon:pl-0 grow bg-color-bg max-sm:pl-0 pt-[130px]'>
       <FirstPage></FirstPage>
       <SecondPage></SecondPage>
       <ThirdPage></ThirdPage>

@@ -15,12 +15,12 @@ export default function Stroies() {
 
     const contents = SelfIntroduction();
     return (
-        <List sx={{ minWidth: '1000px', maxWidth: 360, bgcolor: '#f5f0f0',borderRadius:'1rem'
+        <List sx={{ bgcolor: '#f5f0f0',borderRadius:'1rem',padding:"10px",width:"75%"
         ,boxShadow:'0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',cursor:"pointer"}}>
         {
             contents.map((item,index)=>(
           
-                <ListItem key={index} sx={{width:"1000px"}}  onClick={()=>setOpen(open===index ? -1:index)}>
+                <ListItem key={index} sx={{width:"100%"}}  onClick={()=>setOpen(open===index ? -1:index)}>
                   <ListItemAvatar>
                     <Avatar sx={{background:"transparent"}}>
                       {item.avatar}
