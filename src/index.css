@@ -88,8 +88,8 @@ code {
   margin-left: 10px;
   margin-right: 10px;
   font-size: 9rem;
-
 }
+
 .skills ul li:hover{
 }
 
@@ -113,6 +113,10 @@ h3{
     @apply text-xl 
   }
 
+
+  .skills ul li{
+    font-size: 1rem;
+  }
 }
 
 img{}

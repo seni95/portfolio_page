@@ -4,6 +4,7 @@ import Button from '@mui/material/Button';
 import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 import { IconButton } from '@mui/material';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 export default function DescShow({ children, desc, hoverType = "rounded" }) {
 
@@ -32,7 +33,7 @@ export default function DescShow({ children, desc, hoverType = "rounded" }) {
       }
     >
       {hoverType === "rounded" ?
-        <IconButton sx={{ fontSize: "10rem", padding: "10px", width: "100%" }}>
+        <IconButton sx={{ fontSize:"10rem",padding: "10px", width: "100%" }}>
           {children}
         </IconButton> :
         <Button sx={{ fontSize: "10rem",width: "100%" }}>
