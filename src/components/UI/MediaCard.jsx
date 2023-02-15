@@ -12,12 +12,20 @@ import {GrClose} from 'react-icons/gr';
 import { BsGraphUp,BsTools } from 'react-icons/bs';
 import { FcCloseUpMode } from 'react-icons/fc';
 import { MdDetails } from 'react-icons/md';
+import useMediaQuery from '@mui/material/useMediaQuery';
+
+
+
+
+export default function MediaCard({el}) {
+const onMobile = useMediaQuery('(max-width:640px)');
 const style = {
   position: 'absolute',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: document.body.offsetWidth/2, height: document.body.offsetHeight-150,
+  width: onMobile?document.body.offsetWidth:document.body.offsetWidth/2, 
+  height:document.body.offsetHeight-150,
   bgcolor: 'white',
   border: '2px solid #000',
   boxShadow: 24,
@@ -28,7 +36,7 @@ const style = {
   overflowX:'auto',
 };
 
-export default function MediaCard({el}) {
+
   const [open, setOpen] = useState(false);
   const handleOpen = () => {
     setOpen(true);
@@ -67,7 +75,7 @@ export default function MediaCard({el}) {
         aria-labelledby="child-modal-title"
         aria-describedby="child-modal-description"
       >
-        <Box sx={{ ...style, width: document.body.offsetWidth/2, height:document.body.offsetHeight-150}}>
+        <Box sx={{ ...style, width: onMobile? document.body.offsetWidth:document.body.offsetWidth/2, height:document.body.offsetHeight-150}}>
         <div className='flex justify-between'>
         <h2 id="child-modal-title">{el.title}</h2> 
           <Button onClick={handleClose}><GrClose className='text-5xl'></GrClose></Button>
