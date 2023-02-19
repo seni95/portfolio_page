@@ -43,9 +43,9 @@ export default function portfolioList() {
       </>,
       detail: {
         date: "2022년 11월 01일",
-        tech: ["REACT", "JAVASCRIPT"]
+        tech: ["REACT", "JAVASCRIPT","PostCSS"]
       },
-      tech:["HTML/Javascript/CSS","React"],
+      tech:["HTML/Javascript/CSS","React","PostCSS"],
       growth:["리액트로 직접 사용 가능한 웹 어플리케이션을 만들고, 웹에 직접 배포해본 경험"],
       mainImg: "https://voracious-process-9fb.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fbd76e0e4-5eef-4d88-8691-e95b8aa94298%2FUntitled.png?table=block&id=1bc8cbd2-f175-4651-898f-530fe7452cab&spaceId=12843261-57ef-4646-a419-56394aa12631&width=2000&userId=&cache=v2"
       ,URL:"https://seni95.github.io/askLuck/"
@@ -58,12 +58,12 @@ export default function portfolioList() {
       </>,
       detail: {
         date: "2022년 11월 24일",
-        tech: ["REACT", "JAVASCRIPT"]
+        tech: ["REACT", "JAVASCRIPT","PostCSS"]
       },
-      tech:["HTML/Javascript/CSS","React","Firebase"],
+      tech:["HTML/Javascript/CSS","React","Firebase","PostCSS"],
       growth:["Firebase를 이용해 로그인과 사용자 정보 저장이 가능한 웹 어플리케이션을 빌드해본 경험"],
-      mainImg: "https://voracious-process-9fb.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ffa39f08a-cd8b-4e04-bebe-cf3b493d1feb%2FUntitled.png?table=block&id=6385c051-95be-490c-843d-c7cecc317686&spaceId=12843261-57ef-4646-a419-56394aa12631&width=2000&userId=&cache=v2"
-      ,URL:"https://seni95.github.io/StudyPlanner/"
+      mainImg:  `${process.env.PUBLIC_URL}/img/Portfolio/StudyPlanner.png`
+      ,URL:"https://animated-biscotti-fea3b7.netlify.app/"
     },
     {
       title: "유튜브 프로젝트",
@@ -73,9 +73,9 @@ export default function portfolioList() {
       </>,
       detail: {
         date: "2022년 12월 06일",
-        tech: ["REACT", "JAVASCRIPT"]
+        tech: ["REACT", "JAVASCRIPT","TailwindCSS"]
       },
-      tech:["HTML/Javascript/CSS","React","Youtube API"],
+      tech:["HTML/Javascript/TailwindCSS","React","Youtube API"],
       growth:["클론 코딩을 통한 웹 사이트 제작 경험"],
       mainImg: `${process.env.PUBLIC_URL}/img/Portfolio/Youtube.png`,
       URL: "https://illustrious-licorice-dd8d41.netlify.app"

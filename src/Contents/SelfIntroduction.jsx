@@ -4,7 +4,7 @@ import {FcCloseUpMode, FcBusinesswoman,FcMms} from 'react-icons/fc';
 
 export default function SelfIntroduction() {
   return [
-    {title:"성장과정",
+    {title:"나의 이야기",
     content:<Typography>
         처음 개발에 흥미를 가지게 된건 24살 한 인터넷 업체에서 아르바이트를 시작하면서부터였습니다. 당시 html을 처음 알게 되고, 그것을 통해 소규모 웹사이트를 개발해보면서 단순히 어려울것이라고만 생각했던 개발이 생각보다 쉽고, 흥미에도 맞다는 생각을 하게 되었습니다. 그래서 복학을 하면서 컴퓨터공학 복수전공을 신청하게 되었습니다. <br></br>
 
@@ -20,16 +20,16 @@ export default function SelfIntroduction() {
 
 “타로카드 리딩” 이라는 업무 경험은 언뜻, 개발과는 상관 없어 보일 수 있습니다. 하지만 저는 이 아르바이트를 하면서 그 누구보다 “사람”을 잘 이해하게 되었고, 의사소통 과정에서 무엇이 중요한지를 배울 수 있었습니다. 그리고 이것이 개발자로 근무하며 협업과 “소통”에 큰 도움을 줄 것이라는 것을 의심하지 않습니다.
 </Typography>,avatar:<FcCloseUpMode className='text-3xl'></FcCloseUpMode>},
-{title:"직무 경험",
-content:<Typography>
-HTML/CSS/JS를 익혔을 때, 소소한 플레시 게임을 만들거나 원하는 느낌의 대략적인 UI를 구현하면서, 사실 "꼭 Vue나 React와 같은 프레임워크를 익힐 필요가 있을까?"
-</Typography>,
-avatar:<FcMms className='text-3xl'></FcMms>},
-    {title:"입사 후 포부",
-  content:<Typography>
+// {title:"직무 경험",
+// content:<Typography>
+// HTML/CSS/JS를 익혔을 때, 소소한 플레시 게임을 만들거나 원하는 느낌의 대략적인 UI를 구현하면서, 사실 "꼭 Vue나 React와 같은 프레임워크를 익힐 필요가 있을까?"
+// </Typography>,
+// avatar:<FcMms className='text-3xl'></FcMms>},
+//     {title:"입사 후 포부",
+//   content:<Typography>
 
-  </Typography>,
-  avatar:<FcBusinesswoman className='text-3xl'></FcBusinesswoman>},
+//   </Typography>,
+//   avatar:<FcBusinesswoman className='text-3xl'></FcBusinesswoman>},
 
   ]
 }
