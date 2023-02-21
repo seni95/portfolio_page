@@ -55,7 +55,7 @@ export default function FirstPage() {
           </li>
           <li>
             <DescShow title="JS" desc={<div> JS를 이용하여 완성된 웹 페이지 화면에 동적인 이펙트들을 자유자재로 구현할 수 있습니다.<br></br>
-              또한 FIREBASE를 이용해 데이터베이스를 다루거나 서버와 통신을 할 때 이 언어를 주로 사용합니다.</div>}>
+              또한 데이터베이스를 다루거나 서버와 통신을 할 때 이 언어를 주로 사용합니다.</div>}>
               <DiJavascript className='text-[#f9ca24] drop-shadow-2xl'></DiJavascript>
             </DescShow>
           </li>
@@ -85,7 +85,7 @@ export default function FirstPage() {
 
           </li>
           <li>
-            <DescShow title="MUI" desc={<div> 빠르게 원하는 형태의 UI를 구현할 수 있습니다.</div>}>
+            <DescShow title="MUI" desc={<div> 빠르게 원하는 형태의 UI를 구현할 수 있습니다. </div>}>
               <SiMaterialui className='text-[#3867d6] drop-shadow-2xl'></SiMaterialui>
             </DescShow>
           </li>
@@ -103,7 +103,7 @@ export default function FirstPage() {
             </DescShow>
           </li>
           <li>
-            <DescShow title="Jquery" desc={<div> 빠르고 간단하게 CSS를 다룰 수 있습니다.</div>}>
+            <DescShow title="Jquery" desc={<div> 빠르고 간단하게 CSS를 다룰 수 있습니다. 가장 많이 애용하는 CSS 라이브러리 입니다.</div>}>
               <SiTailwindcss className='text-[#778beb] drop-shadow-2xl'></SiTailwindcss>
             </DescShow>
           </li>
