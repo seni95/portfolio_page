@@ -103,7 +103,7 @@ export default function FirstPage() {
             </DescShow>
           </li>
           <li>
-            <DescShow title="Jquery" desc={<div> 빠르고 간단하게 CSS를 다룰 수 있습니다. 가장 많이 애용하는 CSS 라이브러리 입니다.</div>}>
+            <DescShow title="Jquery" desc={<div> 빠르고 간단하게 CSS를 다룰 수 있습니다. 가장 많이 애용하는 CSS 프레임워크 입니다.</div>}>
               <SiTailwindcss className='text-[#778beb] drop-shadow-2xl'></SiTailwindcss>
             </DescShow>
           </li>
