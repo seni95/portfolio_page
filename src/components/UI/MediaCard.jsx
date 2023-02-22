@@ -84,8 +84,8 @@ const style = {
         <div className='mb-3'>
      <ul>
        <li>생성 날짜 : {el.detail.date}</li>
-       <li>주요 기술 : <ul>{el.detail.tech.map((i,index)=><li key={index}>{i}</li>)}</ul></li>
-       <li>바로 가기 링크 : <a href={el.URL} className='underline'>CLICK HERE</a></li>
+       <li>주요 기술 : <ul className='inline'>{el.detail.tech.map((i,index)=><li className={`inline mr-3 bg-selected`}  key={index}>{i}</li>)}</ul></li>
+       <li>바로 가기 링크 → <a href={el.URL} className='underline'>CLICK HERE</a></li>
      </ul>
    </div>
    <img src={el.mainImg}></img>
@@ -94,13 +94,13 @@ const style = {
       {el.desc2}
      </p>
      <div>
-       <h3><BsTools className='inline'></BsTools> 사용 기술 및 라이브러리</h3>
+       <h3 className='my-5'><BsTools className='inline text-point'></BsTools> 사용 기술 및 라이브러리</h3>
        <ul>
         {el.tech.map((i,index)=><li key={index}>{i}</li>)}
        </ul>
      </div>
      <div>
-       <h3><BsGraphUp className='inline'></BsGraphUp> 성장 경험</h3>
+       <h3 className='my-5'><BsGraphUp className='inline text-point'></BsGraphUp> 성장 경험</h3>
        <ul>
          <li>앱 스토어 등록 및 배포 경험</li>
        </ul>

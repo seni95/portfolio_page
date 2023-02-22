@@ -13,7 +13,17 @@ module.exports = {
       'selected':'#ffb3b5',
       'main-container':'#FAF2F1',
       'blue':'#2980b9',
-      'point':'#9c4146'
+      'point':'#9c4146',
+      'NETLIFY':'#c44569',
+      'skill1':'#fed330',
+      'skill2':'#fa8231',
+      'skill3':'#f7b731',
+      'skill4':'#fc5c65',
+      'skill5':'#d1d8e0',
+      'skill6':'#a55eea',
+      'skill7':'#778ca3',
+      'skill8':'#4b7bec',
+      'white':'#fff'
     },
     fontFamily:{
       'doHyeon':['"Do Hyeon"', 'sans-serif'],
