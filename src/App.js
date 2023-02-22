@@ -11,7 +11,6 @@ import Footer from './pages/Footer';
 function App() {
   const contentsList = useRef();
   useEffect(()=>{
-    console.log(document.body.offsetWidth);
   })
 
   return (
