@@ -70,7 +70,7 @@ export default class MultipleRows extends Component {
           </div>
 
           <div className="w-5/6">
-            <DescShow desc={`제가 키우는 고양이 세라예요! 올해 3살 되었습니다.`} hoverType={"regular"}>
+            <DescShow desc={`제가 키우는 고양이 세라예요! 올해 3살 되었습니다. 저를 채용 하시면, 더 귀여운 사진들을 많이 볼 수 있어요! `} hoverType={"regular"}>
             <img className="w-full h-60 lg:h-96 p-5 brightness-75 max-md:h-48 max-sm:h-32 max-md:p-0" src={`${process.env.PUBLIC_URL}/img/sera2.jpg`} />
           </DescShow>
           </div>
