@@ -102,7 +102,7 @@ const style = {
      <div>
        <h3 className='my-5'><BsGraphUp className='inline text-point'></BsGraphUp> 성장 경험</h3>
        <ul>
-         <li>앱 스토어 등록 및 배포 경험</li>
+         {el.growth.map((i,index)=><li key={index}>{i}</li>)}
        </ul>
      </div>
    </Typography>

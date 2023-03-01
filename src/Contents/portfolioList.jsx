@@ -34,7 +34,7 @@ export default function portfolioList() {
         tech: ["REACT-NATIVE", "JAVASCRIPT", "EXPO"],
       },
       tech: ["Html/Javascript/CSS", "React-Native", "Expo", "Async-Storage", "ScrollView"],
-      growth: "앱 스토어 등록 및 배포 경험",
+      growth: ["앱 스토어 등록 및 배포 경험"],
       mainImg: "https://voracious-process-9fb.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F1d174328-05ea-45b2-a95b-f94bc184b62e%2F%25EC%2595%2584%25ED%258A%25B8%25EB%25B3%25B4%25EB%2593%259C__1.png?table=block&id=24e5ca58-2a75-47bb-a1ea-64d174df601d&spaceId=12843261-57ef-4646-a419-56394aa12631&width=2000&userId=&cache=v2",
       URL: "https://play.google.com/store/apps/details?id=com.lovelyseyeon.thanksDiary"
     },
