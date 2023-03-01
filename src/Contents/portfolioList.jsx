@@ -67,6 +67,12 @@ export default function portfolioList() {
       growth:["Firebase를 이용해 로그인과 사용자 정보 저장이 가능한 웹 어플리케이션을 빌드해본 경험"],
       mainImg:  `${process.env.PUBLIC_URL}/img/Portfolio/StudyPlanner.png`
       ,URL:"https://animated-biscotti-fea3b7.netlify.app/"
+    ,update:<>
+    자바스크립트의 내장 함수인 setInterval로 timer기능을 구현했으나, 사용자가 다른 작업을 할 때엔 call stack의 우선순위가 밀려나서 타이머 시간이 정확히 측정되지 않는 문제가 발생하였다.
+    클라이언트의 환경에서 setInterval을 통해 계속해서 스탑워치를 업데이트 하는 것은 정확도 뿐 아니라 성능에도 영향을 줄 수 있다는 것을 인지 한 후,
+    타이머가 1초마다 update 및 rendering 되는 방식이 아닌, (현재시간 - 기준시간)의 방식으로 브라우저가 포커스 될 때마다 사용자에게 update하는 방식으로 변경 하여
+    정확도와 성능을 개선했다.
+    </>
     },
     {
       title: "유튜브 프로젝트",

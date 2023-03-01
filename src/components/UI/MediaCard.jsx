@@ -11,7 +11,7 @@ import { Box } from '@mui/system';
 import {GrClose} from 'react-icons/gr';
 import { BsGraphUp,BsTools } from 'react-icons/bs';
 import { FcCloseUpMode } from 'react-icons/fc';
-import { MdDetails } from 'react-icons/md';
+import {RxMagnifyingGlass} from 'react-icons/rx';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 
@@ -105,6 +105,11 @@ const style = {
          {el.growth.map((i,index)=><li key={index}>{i}</li>)}
        </ul>
      </div>
+     {el.update && 
+      <div>
+       <h3 className='my-5'><RxMagnifyingGlass className='inline text-point'></RxMagnifyingGlass> 장애와 개선</h3>
+      {el.update}
+      </div>}
    </Typography>
         </Box>
       </Modal>
