@@ -85,7 +85,7 @@ const style = {
      <ul>
        <li>생성 날짜 : {el.detail.date}</li>
        <li>주요 기술 : <ul className='inline'>{el.detail.tech.map((i,index)=><li className={`inline mr-3 bg-selected`}  key={index}>{i}</li>)}</ul></li>
-       <li>바로 가기 링크 → <a href={el.URL} className='underline'>CLICK HERE</a></li>
+       <li>바로 가기 링크 → <a href={el.URL} target="_blank" className='underline'>CLICK HERE</a></li>
      </ul>
    </div>
    <img src={el.mainImg}></img>
