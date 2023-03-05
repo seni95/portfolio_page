@@ -33,12 +33,12 @@ export default function SecondPage() {
         </div>
         <div className='mt-10 flex'>
           <h2> <AiFillGithub className='inline mr-2'></AiFillGithub>깃허브 페이지 → </h2>
-          <h2 className='ml-5'><a href="https://github.com/seni95" target='_blank'><BsGithub className='text-[#34495e] text-6xl inline hover:text-7xl'></BsGithub></a></h2>
+          <h2 className='ml-5'><a href="https://github.com/seni95" target='_blank'><BsGithub className='text-[#34495e] text-6xl inline'></BsGithub></a></h2>
         </div>
         <div>
           <h2><FaAward className='inline mr-2'></FaAward>수상경력</h2>
           <h3>계명대학교 캡스톤 디자인 UCC 공모전 장려상</h3>
-          <h3>유튜브 링크 → <a href=""><FiLink className='text-[#5f27cd] inline'></FiLink></a></h3>
+          <h3>유튜브 링크 → <a href="https://www.youtube.com/watch?v=veCwPa1AMi8"><FiLink className='text-[#5f27cd] inline'></FiLink></a></h3>
         </div>
         <div>
           <h2><GiPositionMarker className='inline mr-2'></GiPositionMarker>주소</h2>
