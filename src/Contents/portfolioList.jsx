@@ -21,7 +21,8 @@ export default function portfolioList() {
       tech: ["HTML/Javascript/TailwindCSS", "React", "Restful API", "Firebase"],
       growth: ["RESTful API를 이용한 데이터 관리", "유저와의 상호작용에 대한 고민"],
       mainImg: "https://voracious-process-9fb.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F3629090d-3345-4190-bdd2-88a4df094983%2FUntitled.png?table=block&id=b637ff73-3c4c-4761-8fb9-fed17dc7ec40&spaceId=12843261-57ef-4646-a419-56394aa12631&width=2000&userId=&cache=v2"
-      , URL: "https://main--silver-crostata-7745ac.netlify.app/"
+      , URL: "https://main--silver-crostata-7745ac.netlify.app/",
+      GITHUB:"https://github.com/seni95/shopping_mall"
     },
     {
       title: "시크릿 감사일기"
@@ -36,7 +37,8 @@ export default function portfolioList() {
       tech: ["Html/Javascript/CSS", "React-Native", "Expo", "Async-Storage", "ScrollView"],
       growth: ["앱 스토어 등록 및 배포 경험"],
       mainImg: "https://voracious-process-9fb.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F1d174328-05ea-45b2-a95b-f94bc184b62e%2F%25EC%2595%2584%25ED%258A%25B8%25EB%25B3%25B4%25EB%2593%259C__1.png?table=block&id=24e5ca58-2a75-47bb-a1ea-64d174df601d&spaceId=12843261-57ef-4646-a419-56394aa12631&width=2000&userId=&cache=v2",
-      URL: "https://play.google.com/store/apps/details?id=com.lovelyseyeon.thanksDiary"
+      URL: "https://play.google.com/store/apps/details?id=com.lovelyseyeon.thanksDiary",
+      GITHUB:"https://github.com/seni95/thanksDiary"
     },
     {
       title: "만세력 프로젝트",
@@ -51,7 +53,8 @@ export default function portfolioList() {
       tech:["HTML/Javascript/CSS","React","PostCSS"],
       growth:["리액트로 직접 사용 가능한 웹 어플리케이션을 만들고, 웹에 직접 배포해본 경험"],
       mainImg: "https://voracious-process-9fb.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fbd76e0e4-5eef-4d88-8691-e95b8aa94298%2FUntitled.png?table=block&id=1bc8cbd2-f175-4651-898f-530fe7452cab&spaceId=12843261-57ef-4646-a419-56394aa12631&width=2000&userId=&cache=v2"
-      ,URL:"https://seni95.github.io/askLuck/"
+      ,URL:"https://seni95.github.io/askLuck/",
+      GITHUB:"https://github.com/seni95/askLuck"
     },
     {
       title: "스터디 플래너"
@@ -73,7 +76,8 @@ export default function portfolioList() {
     그래서 타이머가 1초마다 update 및 rendering 되는 방식이 아닌, (현재시간 - 기준시간)의 방식으로 시간을 측정하여, setInterval 함수가 초마다 실행되지 않더라도,
     내부에 저장된 start 함수 시작 시간을 이용하여 계산하는 방식으로
     정확도와 성능을 개선했다.
-    </>
+    </>,
+    GITHUB:"https://github.com/seni95/StudyPlanner"
     },
     {
       title: "유튜브 프로젝트",
@@ -88,7 +92,8 @@ export default function portfolioList() {
       tech:["HTML/Javascript/TailwindCSS","React","Youtube API"],
       growth:["클론 코딩을 통한 웹 사이트 제작 경험"],
       mainImg: `${process.env.PUBLIC_URL}/img/Portfolio/Youtube.png`,
-      URL: "https://illustrious-licorice-dd8d41.netlify.app"
+      URL: "https://illustrious-licorice-dd8d41.netlify.app",
+      GITHUB:"https://github.com/seni95/Personal_Youtube"
     }
     ,
   ]
