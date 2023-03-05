@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import { IconButton } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
-export default function DescShow({ children, desc, hoverType = "rounded" }) {
+export default function DescShow({ title ,children, desc, hoverType = "rounded" }) {
 
   const onMobile = useMediaQuery('(max-width:640px)')
 
@@ -29,6 +29,7 @@ export default function DescShow({ children, desc, hoverType = "rounded" }) {
     <ToolsExplain
       title={
         <React.Fragment>
+          <Typography color="var(--color-point)" sx={{fontWeight:'bold'}}>{title}</Typography>
           {desc}
         </React.Fragment>
       }

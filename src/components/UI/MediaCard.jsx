@@ -15,8 +15,6 @@ import {RxMagnifyingGlass} from 'react-icons/rx';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 
-
-
 export default function MediaCard({el}) {
 const onMobile = useMediaQuery('(max-width:640px)');
 const style = {
