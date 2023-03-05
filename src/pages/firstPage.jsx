@@ -48,10 +48,8 @@ export default function FirstPage() {
           </li>
           <li>
             <DescShow title="CSS" desc={<div> 완성된 HTML태그들에 CSS를 덧입혀 원하는 모습대로 웹 페이지를 디자인 할 수 있습니다.</div>}>
-
               <DiCss3 className='text-[#0984e3] drop-shadow-2xl'></DiCss3>
             </DescShow>
-
           </li>
           <li>
             <DescShow title="자바스크립트" desc={<div> JS를 이용하여 완성된 웹 페이지 화면에 동적인 이펙트들을 자유자재로 구현할 수 있습니다.<br></br>
@@ -76,13 +74,10 @@ export default function FirstPage() {
               <TbBrandReactNative />
             </DescShow>
           </li>
-
           <li>
             <DescShow title="Netlify" desc={<div> 완성한 웹 사이트를 빌드하고 실시간 배포 기능을 사용 할 수 있습니다.</div>}>
-
               <SiNetlify className='text-[#2bcbba] drop-shadow-2xl'></SiNetlify>
             </DescShow>
-
           </li>
           <li>
             <DescShow title="MUI" desc={<div> 빠르게 원하는 형태의 UI를 구현할 수 있습니다. </div>}>
@@ -91,14 +86,11 @@ export default function FirstPage() {
           </li>
           <li>
             <DescShow title="Jquery" desc={<div> JS보다 짧은 코드로 웹 페이지 이펙트를 간단히 구현 할 수 있습니다.</div>}>
-
               <SiJquery className='text-[#4b7bec] drop-shadow-2xl'></SiJquery>
             </DescShow>
-
           </li>
           <li>
             <DescShow title="xd(어도비)" desc={<div> 구현 할 웹 페이지를 디자인 하거나 기획 할 때 사용 합니다.</div>}>
-
               <SiAdobexd className='text-[#c44569] drop-shadow-2xl'></SiAdobexd>
             </DescShow>
           </li>
