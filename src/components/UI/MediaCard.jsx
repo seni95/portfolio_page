@@ -13,6 +13,7 @@ import { BsGraphUp,BsTools } from 'react-icons/bs';
 import { FcCloseUpMode } from 'react-icons/fc';
 import {RxMagnifyingGlass} from 'react-icons/rx';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import { DataGrid } from '@mui/x-data-grid';
 
 
 export default function MediaCard({el}) {
@@ -42,6 +43,16 @@ const style = {
   const handleClose = () => {
     setOpen(false);
   };
+
+  //콘텐츠 정보를 표로 정리하기 위한 객체
+  const columns = [
+    {field:'title',width:70},
+    {field:'content'}
+  ];
+  const rows = [
+    {id:1,title:'생성 날짜', content:el.detail.date},
+    {id:2,title:'주요 기술', content:el.detail.date}
+  ];
 
   return (
     <Card sx={{ width: 345 , borderRadius: '1rem',backgroundColor:'#FAF2F1',flexShrink:0}}>
@@ -80,14 +91,12 @@ const style = {
         </div>
         <Typography component={'span'}>
         <div className='mb-3'>
-     <ul>
-       <li>생성 날짜 : {el.detail.date}</li>
-       <li>주요 기술 : <ul className='inline'>{el.detail.tech.map((i,index)=><li className={`inline mr-3 bg-selected`}  key={index}>{i}</li>)}</ul></li>
-       <li>
-       <span>바로 가기 링크 → <a href={el.URL} target="_blank" className='underline'>CLICK HERE</a></span>
-       <span className='ml-3 bg-yellow'>깃 허브 링크 → <a href={el.GITHUB} target="_blank" className='underline'>GITHUB</a></span>
-       </li>
-     </ul>
+     <DataGrid
+     rows={rows}
+     columns={columns}
+     pageSize={2}
+     rowsPerPageOptions={[5]}
+     ></DataGrid>
    </div>
    <img src={el.mainImg}></img>
      <p className='bg-color-bg-dark py-3 my-3 text-xl'>
