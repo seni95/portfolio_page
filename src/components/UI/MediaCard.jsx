@@ -6,7 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import {useState} from 'react';
-import { Modal } from '@mui/material';
+import { Modal, Table, TableBody, TableCell, TableContainer, TableRow } from '@mui/material';
 import { Box } from '@mui/system';
 import {GrClose} from 'react-icons/gr';
 import { BsGraphUp,BsTools } from 'react-icons/bs';
@@ -45,14 +45,17 @@ const style = {
   };
 
   //콘텐츠 정보를 표로 정리하기 위한 객체
-  const columns = [
-    {field:'title',width:70},
-    {field:'content'}
-  ];
+  function createData(title,content){
+    return {title,content}
+  }
+
   const rows = [
-    {id:1,title:'생성 날짜', content:el.detail.date},
-    {id:2,title:'주요 기술', content:el.detail.date}
-  ];
+    createData('생성 날짜',el.detail.date),
+    createData('주요 기술',<ul className='inline'>{el.detail.tech.map((i,index)=><li className={`inline mr-3 bg-selected`}  key={index}>{i}</li>)}</ul>),
+    createData('바로 가기 링크',<a href={el.URL}>{el.URL}</a>),
+    createData('깃허브 링크',<a href={el.GITHUB} className='underline bg-yellow'>{el.GITHUB}</a>),
+
+  ]
 
   return (
     <Card sx={{ width: 345 , borderRadius: '1rem',backgroundColor:'#FAF2F1',flexShrink:0}}>
@@ -91,12 +94,21 @@ const style = {
         </div>
         <Typography component={'span'}>
         <div className='mb-3'>
-     <DataGrid
-     rows={rows}
-     columns={columns}
-     pageSize={2}
-     rowsPerPageOptions={[5]}
-     ></DataGrid>
+     <TableContainer>
+      <Table>
+        <TableBody>
+          {rows.map((row)=>(
+            <TableRow
+            key={row.name}
+
+            >
+              <TableCell>{row.title}</TableCell>
+              <TableCell>{row.content}</TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+     </TableContainer>
    </div>
    <img src={el.mainImg}></img>
      <p className='bg-color-bg-dark py-3 my-3 text-xl'>
