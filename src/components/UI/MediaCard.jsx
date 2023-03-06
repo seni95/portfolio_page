@@ -62,7 +62,6 @@ const style = {
       <CardMedia
         sx={{ height: 200 ,borderRadius: '1.2rem'}}
         image={el.mainImg}
-        title="green iguana"
       />
       <CardContent sx={{width:400, fontFamily:"Do Hyeon"}}>
         <Typography gutterBottom variant="h5" component="div">
@@ -100,7 +99,7 @@ const style = {
           {rows.map((row)=>(
             <TableRow
             key={row.name}
-
+            sx={{whiteSpace:'nowrap'}}
             >
               <TableCell>{row.title}</TableCell>
               <TableCell>{row.content}</TableCell>
@@ -111,8 +110,7 @@ const style = {
      </TableContainer>
    </div>
    <img src={el.mainImg}></img>
-     <p className='bg-color-bg-dark py-3 my-3 text-xl'>
-     <FcCloseUpMode className='inline mr-3'></FcCloseUpMode>
+     <p className='bg-color-bg-dark p-5 my-3 text-xl font-doHyeon'>
       {el.desc2}
      </p>
      <div>
