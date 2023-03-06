@@ -51,7 +51,7 @@ const style = {
 
   const rows = [
     createData('생성 날짜',el.detail.date),
-    createData('주요 기술',<ul className='inline'>{el.detail.tech.map((i,index)=><li className={`inline mr-3 bg-selected`}  key={index}>{i}</li>)}</ul>),
+    createData('주요 기술',<ul className='inline'>{el.detail.tech.map((i,index)=><li className={`inline mr-3`}  key={index}>{i}</li>)}</ul>),
     createData('바로 가기 링크',<a href={el.URL}>{el.URL}</a>),
     createData('깃허브 링크',<a href={el.GITHUB} className='underline bg-yellow'>{el.GITHUB}</a>),
 
